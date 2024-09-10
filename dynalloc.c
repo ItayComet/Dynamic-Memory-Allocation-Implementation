@@ -1,6 +1,5 @@
 #include <stddef.h>
 #include <unistd.h>
-#include <stdio.h>
 
 
 #define min(x,y) (x > y)? y : x;
