@@ -49,7 +49,7 @@ Header* merge_blocks(Header *head1, Header *head2){
  *
  */
 Header* split_block(Header *header, size_t new_size){
-	size_t new_block_size = header->size - new_size - sizeof(header);
+	size_t new_block_size = header->size - new_size - sizeof(Header);
 	if(new_block_size < MIN_BLOCK_SIZE)
 		return NULL;
 	Header* new_header = (Header*)((void*)(header + 1) + new_size);
